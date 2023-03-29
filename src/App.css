@@ -1,107 +1,340 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-.btn {
+@keyframes slide-right {
+  from {
+    margin-left: -80px
+  }
+  to {
+    margin-left: 0%
+  }
+}
+
+
+/* Body */
+body {
+  background: rgb(32, 35, 48);
+}
+
+/* Navbar */
+.david {
   font-size: 17px;
   background: transparent;
   border: none;
-  color: #ffedd3;
   text-transform: uppercase;
   position: relative;
-  transition: .5s ease;
+  cursor: pointer;
+  color: black;
+  animation: fade-in 3s ease;
 }
 
-button.btn {
+button.david {
+  /* margin-left: 43%;
   margin-top: 30px;
-  font-size: 50px;
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #ffc506;
-  transition: .5s ease;
-}
-
-.btn:hover {
-  color: #1e1e2b;
-  transition-delay: .5s;
-}
-
-.btn:hover::before {
-  width: 100%;
-}
-
-.btn::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #ffc506;
-  transition: .4s ease;
-  z-index: -1;
-}
-
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
-}
-
-button {
-  /* Variables */
- --button_radius: 0.75em;
- --button_color: #e8e8e8;
- --button_outline_color: #000000;
- font-size: 17px;
- font-weight: bold;
- border: none;
- border-radius: var(--button_radius);
- background: var(--button_outline_color);
- text-decoration: none;
- color: black;
-}
-
-.button_top {
- display: block;
- box-sizing: border-box;
- border: 2px solid var(--button_outline_color);
- border-radius: var(--button_radius);
- padding: 0.75em 1.5em;
- background: var(--button_color);
- color: var(--button_outline_color);
- transform: translateY(-0.2em);
- transition: transform 0.1s ease;
-}
-
-button:hover .button_top {
-  /* Pull the button upwards when hovered */
- transform: translateY(-0.33em);
-}
-
-button:active .button_top {
-  /* Push the button downwards when pressed */
- transform: translateY(0);
-}
-
-.card {
-  height: 50vh;
-  border-radius: 30px;
-  background: #212121;
-  box-shadow: 15px 15px 30px rgb(25, 25, 25),
-              -15px -15px 30px rgb(60, 60, 60);
-  width: 50vw;
-  margin-left: 500px;
-  margin-top: 300px;
- }
-
- .card-text {
-  color: white;
+  font-size: 50px; */
   display: flex;
   justify-content: center;
-  align-items: center;
- }
+}
+
+.links {
+float: right;
+margin-top: -50px;
+animation: fade-in 3s ease;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white; 
+}
+
+
+#portfolio {
+  font-size: 35px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#resume {
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+#project {
+  font-size: 35px;
+  margin-right: 30px;
+}
+
+/* About */
+#info {
+  margin-left: 50px;
+}
+
+#profile {
+  position: absolute;
+  border: 5px solid rgb(0, 191, 255);
+  background: rgb(0, 132, 255);
+  margin-top: 300px;
+  margin-left: 100px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 6px 10px rgb(51, 88, 162);
+  border-radius: 10px;
+}
+
+#hello {
+  position: absolute; 
+  left: 4%;
+  top: 30%;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 50px;
+  line-height: 97px;
+  animation: slide-right 2s ease;
+}
+
+#intro {
+  position: absolute;
+  width: 45%;
+  left: 4%;
+  top: 45%;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
+  animation: slide-right 2s ease;
+}
+
+#skills {
+  margin-top: -200px;
+  margin-left: 1050px;
+}
+
+#figma {
+  height: 230px;
+  width: 300px;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: 1100px;
+  transform: rotate(20deg);
+}
+
+#figma:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+
+#css {
+  position: absolute;
+  height: 320px;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 750px;
+  transform: rotate(20deg);
+}
+
+#css:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+#js {
+  position: absolute;
+  width: 400px;
+  height: 230px;
+  margin-left: -30px;
+  margin-top: 1100px;
+  transform: rotate(-20deg);
+}
+
+#js:hover {
+  transform: rotate(20deg);
+  transition: .3s;
+}
+
+#react {
+  position: absolute;
+  width: 280px;
+  height: 230px;
+  margin-left: 400px;
+  margin-top:810px;
+  transform: rotate(20deg);
+}
+
+#react:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+#html {
+  position: absolute;
+  margin-top: 470px;
+  width: 450px;
+  height: 280px;
+  margin-left: -65px;
+  transform: rotate(-20deg);
+}
+
+#html:hover {
+  transform: rotate(20deg);
+  transition: .3s;
+}
+
+#github {
+  position: absolute;
+  margin-left: 440px;
+  margin-top: 480px;
+  height: 250px;
+  width: 220px;
+  transform: rotate(20deg);
+}
+
+#github:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+/* Projects */
+#carousel-container {
+  border: 3px solid white;
+  margin-top: 100px;
+  height: 600px;
+  width: 1100px;
+  margin-left: 26%;
+  border-radius: 5%;
+}
+
+#right-arrow {
+position: absolute;
+font-size: 100px;
+margin-top: 10%;
+margin-left: 55%;
+cursor: pointer;
+}
+
+#left-arrow {
+  position: absolute;
+  font-size: 100px;
+  margin-top: 10%;
+  margin-left: -9%;
+  cursor: pointer;
+}
+
+/* Resume */
+#container {
+  margin-top: 100px;
+  color: white;
+  font-size: 22px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#resume-name {
+  margin-left: 35%;
+}
+
+#education {
+  margin-left: 10%;
+}
+
+#boulder-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#rutgers-date {
+  float: right;
+  margin-right: 10%;
+}
+
+.skills {
+  margin-left: 10%;
+}
+
+.experience {
+  margin-left: 10%;
+}
+
+#lg-town {
+  float: right;
+  margin-right: 10%;
+}
+
+#lg-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#cleaners-town {
+  float: right;
+  margin-right: 10%;
+}
+
+#cleaners-date {
+  float: right;
+  margin-right: 10%;
+}
+
+.certificates {
+  margin-left: 10%;
+}
+
+#bootcamp-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#frcc-date {
+  float: right;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 1770px) {
+  #profile {
+    margin-top: 120px;
+  }
+
+  #skills {
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 650px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #resume {
+    float: left;
+    margin-left: -2px;
+    margin-right: 20px;
+  }
+
+  #project {
+    float: left;
+  }
+
+  #portfolio {
+    float: left;
+    margin-left: 50px;
+  }
+
+}
+
+
+
+
+
+
+
+
