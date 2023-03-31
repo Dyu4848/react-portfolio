@@ -9,10 +9,14 @@ const About = ({ setCurrentPage }) => {
       <p id="hello">Hello! My name is David Yu!</p>
       <p id="intro">
         I am an aspiring front-end/UI developer, focusing on creating user friendly
-        applications. I have graduated from the Rutgers full stack flex coding bootcamp, and have decided to focus my time and efforts into front end development and creating UI designs that create a clean environment within web applications. My skillset is geared towards front end development including HTML, CSS, Javascript, API interactions, Bootstrap, React, and Figma. 
+        applications. I have graduated from the Rutgers full stack flex coding bootcamp, and have decided to focus my time and efforts into front end development and creating UI designs that create a clean environment within web applications. My skillsets are geared towards front end development including HTML, CSS, Javascript, API interactions, Bootstrap, React, and Figma. 
       </p>
 
       <div id="triangle">
+      </div>
+
+      <div>
+        <img id="certificate" src="./images/certificate.png" alt="certificate"></img>
       </div>
 
       {/* <div id="skills">
