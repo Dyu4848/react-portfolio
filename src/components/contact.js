@@ -2,14 +2,21 @@ import React, {useState} from 'react';
 
 function Contact() {
     return (
-        <div className="card" style={{width: '18rem'}}>
-  <img src="..." className="card-img-top" alt="..."></img>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <section className="contact-me" id="contact-me">
+      <h2 className="contact-header">Contact</h2>
+      <div className="contact-content">
+        <h3>
+          Contact me through e-mail with the button below!
+        </h3>
+        <p>Email: dyu4848@gmail.com</p>
+        <br/>
+        <a href="mailto:dyu4848@gmail.com" >
+        <div className='btn-container'>
+          <button className="email-btn">Email Me!</button>
+          </div>
+        </a>
+        </div>
+        </section>
     )}
 
     export default Contact;

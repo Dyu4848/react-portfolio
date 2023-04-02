@@ -135,8 +135,8 @@ function Navbar() {
         <span id="resume">
           <Link to="/Resume">Resume</Link>
         </span>
-        <span id="project">
-          <Link to="/Project">Project</Link>
+        <span id="contact">
+          <Link to="/Contact">Contact</Link>
         </span>
       </div>
     </div>

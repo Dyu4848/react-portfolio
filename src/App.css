@@ -77,6 +77,10 @@ font-family: "Raleway", sans-serif;
 justify-content: space-between;
 }
 
+a::before {
+  text-decoration: none;
+}
+
 a:visited {
   text-decoration: none;
   color: white; 
@@ -94,7 +98,7 @@ a:visited {
   margin-right: 50px;
 }
 
-#project {
+#contact {
   font-size: 180%;
   margin-right: 60px;
 }
@@ -435,7 +439,7 @@ a:visited {
     margin-right: 20px;
   }
 
-  #project {
+  #contact {
     float: left;
   }
 
@@ -443,10 +447,58 @@ a:visited {
     float: left;
     margin-left: 50px;
   }
-
 }
 
+/* Contact section */
 
+.contact-me {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 20%;
+  animation: fade-in ease 3s;
+  color: white;
+  margin-top: 5%;
+  font-size: 180%;
+  margin-right: 60px;
+}
+.contact-me h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.contact-content {
+  border: 3px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 40vh;
+}
+.contact-content h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-container {
+  margin-right: 30%;
+  color: black;
+}
+
+.email-btn {
+  border: 3px solid white;
+  background: rgb(32, 35, 48);
+  color: black;
+  width: 200%;
+  height: 200%;
+  border-radius: 15%;
+  font-size: large;
+  cursor: pointer;
+  padding: 25%;
+  animation: change-bg 5s infinite;
+}
 
 
 
